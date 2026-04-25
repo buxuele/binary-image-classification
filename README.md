@@ -73,8 +73,6 @@ docker build -t george-classifier:latest .
 Run inference on a single image:
 ```bash
 # Windows (CMD / PowerShell)
-
-
 docker run --rm -v "%CD%":/app george-classifier:latest python inference.py example_imgs/a1.jpg
 
 # Linux / macOS
