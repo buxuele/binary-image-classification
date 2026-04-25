@@ -67,17 +67,18 @@ The task is non-trivial. Positive samples span wildly different visual styles --
 
 Build the image:
 ```bash
-docker build -t george-classifier:latest .
+docker build -t george-classifier:cpu .
 ```
 
 Run inference on a single image:
 ```bash
 # Windows (CMD / PowerShell)
-docker run --rm -v "%CD%":/app george-classifier:latest python inference.py example_imgs/a1.jpg
+docker run --rm -v "%CD%":/app george-classifier:cpu python inference.py example_imgs/a1.jpg
 
 # Linux / macOS
-docker run --rm -v $(pwd):/app george-classifier:latest python inference.py example_imgs/a1.jpg
+docker run --rm -v $(pwd):/app george-classifier:cpu python inference.py example_imgs/a1.jpg
 ```
+ 
 
 ## Usage
 
