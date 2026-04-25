@@ -1,0 +1,11 @@
+
+
+私人笔记/
+venv/
+data/
+__pycache__/
+
+
+gpu.py
+Dockerfile
+
