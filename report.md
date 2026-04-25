@@ -69,12 +69,11 @@ The reproducible experiments are mapped to the following notebooks:
 
 | # | Architecture | Input | Epochs | Val Acc | Test Acc | AUC | Training Time |
 |---|---|---|---|---|---|---|---|
-| 1 | ResNet18 (baseline) | 224x224 | 5 | 91.40% | -- | -- | ~5 min |
-| 2 | ResNet18 (augmentation + Scheduler) | 224x224 | 8 | 93.00% | 92.51% | 0.9676 | ~10 min |
-| 3 | EfficientNet-B0 (single-stage) | 224x224 | 10 | ~90.0% | -- | -- | ~20 min |
-| 4 | EfficientNet-B3 (two-stage) | 224x224 | 5+5 | degraded | -- | -- | OOM |
-| 5 | ResNet18 + Focal Loss | 224x224 | 10 | 92.28% | -- | -- | ~12 min |
-| 6 | ResNet18 + Label Smoothing | 224x224 | 10 | ~92.0% | -- | -- | ~12 min |
+| 1 | ResNet18 (baseline) | 224x224 | 5 | 91.46% | -- | -- | ~6 min |
+| 2 | ResNet18 (epochs=8) | 224x224 | 8 | 92.63% | 92.51% | 0.9676 | ~10 min |
+| 3 | EfficientNet-B0 (single-stage) | 224x224 | 10 | ~90.88% | -- | -- | ~20 min |
+| 4 | EfficientNet-B3 (two-stage) | 224x224 | 3+7 | 85.50% | -- | -- | 30mins |
+| 5 | ResNet18 + Focal Loss | 224x224 | 15 | 92.28% | -- | -- | ~20 min |
 
 
 ## 4. Time Allocation
